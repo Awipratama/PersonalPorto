@@ -18,8 +18,8 @@ export default {
       <h5 class="text-info1 d-none d-lg-block font-semibold">FrontEnd Developer</h5>
       <h1 class="nama font-bold">AWI PRATAMA</h1>
       <p class="desc mb-3 d-none d-md-block">
-        Terkadang aku binggung, aku bisa menyelesaikan error, tapi gatau caranya gimana.
-        #PemudaBingung
+        Belajar dan Mencari Pengalaman itu Penting, Tapi... Lebih Penting Makan & Minum sih.
+        #pemudalapar
       </p>
       <a href="#about">
         <button class="slide03">
