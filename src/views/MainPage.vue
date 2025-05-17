@@ -13,11 +13,11 @@ export default {
 
 <template>
   <NavBar />
-  <section class="hero d-flex justify-content-center align-items-center">
-    <div class="info-hero w-50">
-      <h5 class="text-info1 font-semibold">FrontEnd & IOT Developer</h5>
+  <section class="hero d-flex flex-column flex-md-row justify-content-center align-items-center">
+    <div class="info-hero w-50 order-2 order-md-1">
+      <h5 class="text-info1 d-none d-lg-block font-semibold">FrontEnd & IOT Developer</h5>
       <h1 class="nama font-bold">AWI PRATAMA</h1>
-      <p class="desc mb-3">
+      <p class="desc mb-3 d-none d-md-block">
         Terkadang aku binggung, aku bisa menyelesaikan error, tapi gatau caranya gimana.
         #PemudaBingung
       </p>
@@ -152,7 +152,7 @@ export default {
         </button>
       </a>
     </div>
-    <img src="@/assets/img/Foto 2.jpg" class="gambar1 rounded-circle" />
+    <img src="@/assets/img/Foto 2.jpg" class="gambar1 rounded-circle order-1 order-md-2" />
   </section>
 
   <section class="pb-4" id="about">
@@ -161,7 +161,7 @@ export default {
     </div>
     <div class="about row justify-content-center gap-5 p-5">
       <div class="about-img col-lg-4 p-0">
-        <img src="@/assets/img/FotoPrestasi.jpg" alt="" class="w-100 rounded" />
+        <img src="@/assets/img/FotoPrestasi.jpg" alt="" class="w-0 w-md-100 rounded" />
       </div>
       <div class="about-info col-lg-4 d-flex flex-column justify-content-center gap-2 text-center">
         <h2><span>I MADE WIDIA PRATAMA</span></h2>
@@ -181,7 +181,7 @@ export default {
     <div class="headskill text-center">
       <h2><span>KETERAMPILAN SAYA</span></h2>
     </div>
-    <div class="listskill d-flex justify-content-center pt-5">
+    <div class="listskill d-flex flex-column flex-md-row justify-content-center pt-5">
       <div class="mini-card">
         <img src="@/assets/svgs/vue.svg" alt="" class="hardskill" />
         <p>Vue Js</p>
@@ -228,7 +228,10 @@ export default {
           <div class="row gy-4">
             <div class="col-md-6 col-12 position-relative">
               <div class="portfolio-img-wrapper">
-                <img src="@/assets/img/VoiceCalculator.jpg" class="w-100 portfolio-img-height-expand" />
+                <img
+                  src="@/assets/img/VoiceCalculator.jpg"
+                  class="w-100 portfolio-img-height-expand"
+                />
               </div>
               <div class="portfolio-name">Voice Calculator</div>
             </div>
@@ -573,7 +576,27 @@ button:hover .star-5 {
   color: white;
 }
 .about-head h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
+}
+@media only screen and (max-width: 500px) {
+  .nama {
+    font-size: 30px;
+    width: 205px;
+  }
+  .about-head h3 {
+    font-size: 1.7rem;
+  }
+  .info-hero {
+    padding-right: 0px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .gambar1 {
+    width: 50%;
+    margin-bottom: 15px;
+  }
 }
 </style>

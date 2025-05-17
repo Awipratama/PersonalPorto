@@ -1,6 +1,6 @@
 <template>
   <section class="footer" id="contact">
-    <div class="container-fluid">
+    <div class="container">
       <h3 class="py-3 text-center">Contact Person</h3>
       <div class="contact-list d-flex flex-column gap-3">
         <div class="list d-flex">
@@ -21,8 +21,7 @@
         </div>
       </div>
     </div>
-    <div class="end-footer container-fluid text-center">
-      <a href="https://www.instagram.com/little_fish05"><i class="bi bi-instagram fs-3"></i></a>
+    <div class="end-footer container text-center">
       <p class="m-0 py-2">CopyRight & Made By AwiPratama</p>
     </div>
   </section>
@@ -60,5 +59,11 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-inline: 3px;
+}
+
+@media screen and (max-width: 500px) {
+  .contact-list {
+    padding-inline: 0;
+  }
 }
 </style>
