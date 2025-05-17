@@ -15,7 +15,7 @@ export default {
   <NavBar />
   <section class="hero d-flex flex-column flex-md-row justify-content-center align-items-center">
     <div class="info-hero w-50 order-2 order-md-1">
-      <h5 class="text-info1 d-none d-lg-block font-semibold">FrontEnd & IOT Developer</h5>
+      <h5 class="text-info1 d-none d-lg-block font-semibold">FrontEnd Developer</h5>
       <h1 class="nama font-bold">AWI PRATAMA</h1>
       <p class="desc mb-3 d-none d-md-block">
         Terkadang aku binggung, aku bisa menyelesaikan error, tapi gatau caranya gimana.
@@ -213,6 +213,10 @@ export default {
       <div class="mini-card">
         <img src="@/assets/svgs/java.svg" alt="" class="hardskill" />
         <p>Java</p>
+      </div>
+      <div class="mini-card">
+        <img src="@/assets/svgs/c++.svg" alt="" class="hardskill" />
+        <p>C/C++</p>
       </div>
     </div>
   </section>
